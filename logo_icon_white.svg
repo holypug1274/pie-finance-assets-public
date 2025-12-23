@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Livello_2" data-name="Livello 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 154.01 270.55">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #fcbe0c;
+      }
+    </style>
+    <symbol id="Nuovo_simbolo" data-name="Nuovo simbolo" viewBox="0 0 154.01 270.55">
+      <g>
+        <text/>
+        <g>
+          <path class="cls-2" d="M154.01,130.76h-63.95v-63.21c4.02-.02,28.82.21,47.37,20.39,15.99,17.4,16.56,37.94,16.58,42.82Z"/>
+          <path class="cls-1" d="M124.72,186.82c-17.4,15.99-37.94,16.56-42.82,16.58-15.33,0-29.19-5.06-40.09-13.53v70.83h-24.35v-120.76c0-34.68,28.28-62.96,64.44-62.96v62.47h63.21c.02,4.02-.2,28.82-20.39,47.37Z"/>
+        </g>
+      </g>
+    </symbol>
+  </defs>
+  <g id="Livello_1-2" data-name="Livello 1">
+    <use width="154.01" height="270.55" transform="translate(0 0)" xlink:href="#Nuovo_simbolo"/>
+  </g>
+</svg>
