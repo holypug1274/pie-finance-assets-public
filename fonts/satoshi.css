@@ -1,0 +1,55 @@
+/**
+ * Satoshi Font - Variable Font Family
+ * Source: https://www.fontshare.com/fonts/satoshi
+ * License: Free for personal and commercial use
+ * 
+ * Weights included:
+ * - Regular (400)
+ * - Medium (500)
+ * - Bold (700)
+ * - Black (900)
+ * 
+ * Files: Local .woff2 files for production performance
+ */
+
+/* Satoshi Regular (400) */
+@font-face {
+  font-family: "Satoshi";
+  src: url("Satoshi-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Satoshi Medium (500) */
+@font-face {
+  font-family: "Satoshi";
+  src: url("Satoshi-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Satoshi Bold (700) */
+@font-face {
+  font-family: "Satoshi";
+  src: url("Satoshi-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Satoshi Black (900) */
+@font-face {
+  font-family: "Satoshi";
+  src: url("Satoshi-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Font Family Variable */
+:root {
+  --font-satoshi: "Satoshi", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Helvetica Neue", Arial, sans-serif;
+}
