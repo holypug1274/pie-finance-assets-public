@@ -1,0 +1,66 @@
+# OpenClaw permission contract for pie-finance-assets-public.
+# Declares what the OpenClaw automation may touch on this repository.
+# Read by oc at every action; edits to this file require a human-reviewed PR.
+
+version: 1
+authorized: true
+
+remotes:
+  github: "git@github.com:holypug1274/pie-finance-assets-public.git"
+
+# Public static assets repository (fonts, images, favicons).
+# All files are public by design; no source code, no config, no secrets.
+
+paths:
+  allowed:
+    - "*.md"
+  protected:
+    - ".github/**"
+    - "fonts/**"
+    - "images/**"
+  forbidden:
+    - ".env"
+    - ".env.*"
+    - "**/*.pem"
+    - "**/*.key"
+    - "**/secrets/**"
+
+commands:
+  allowed:
+    - "git status*"
+    - "git diff*"
+    - "git log*"
+    - "git show*"
+    - "git branch*"
+    - "git remote -v"
+    - "git checkout -b agent/*"
+    - "git checkout agent/*"
+    - "git add *"
+    - "git commit -m *"
+    - "git push origin agent/*"
+    - "git push github agent/*"
+    - "git remote add github *"
+    - "git remote set-url github *"
+    - "ls *"
+    - "cat *"
+    - "head *"
+    - "tail *"
+    - "wc *"
+    - "pwd"
+
+  forbidden:
+    - "git push --force*"
+    - "git push origin main*"
+    - "git push origin master*"
+    - "git reset --hard*"
+    - "git rebase -i*"
+    - "rm -rf *"
+    - "docker push*"
+    - "kubectl*"
+    - "terraform apply*"
+    - "curl * | sh*"
+    - "wget * -O- | sh*"
+
+network:
+  web_access: false
+  allowlist_domains: []
