@@ -1,0 +1,22 @@
+# OpenClaw deploy contract — pie-finance-assets-public (sub-stack role).
+#
+# Static assets (fonts, images) served as part of the pie-finance project.
+# Mounted as a read-only volume into the pie-finance-fe nginx container.
+# Path on host: /srv/openclaw/repos/pie-finance-assets-public
+# Served at:    https://openclaw-server.taild2d547.ts.net/pie-finance/assets/public/
+
+version: 1
+kind: docker-compose
+
+role: sub-stack # not a standalone deployable; volume-mounted by pie-finance-frontend
+
+gateway:
+  route: /pie-finance/assets/public/
+  upstream: pie-finance-fe:80
+  strip_prefix: false
+
+healthcheck:
+  url: /pie-finance/
+  expect_status: 200
+  timeout_seconds: 30
+  retry_interval_seconds: 5
